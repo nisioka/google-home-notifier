@@ -46,5 +46,8 @@ http.createServer(function (request, response) {
         response.end();
     });
 }).listen(config.server_port, function () {
-    ngrok.connect(config.ngrok_server_port);
+    ngrok.connect(config.ngrok_server_port, function (err, url) {
+        console.log('Endpoints:');
+        console.log('    ' + url + '/google-home-notifier');
+    });
 });
