@@ -1,0 +1,7 @@
+{
+    "server_port": "8080",
+    "googlehome_ip": "192.168.XX.XX",
+    "googlehome_name": "Google Home",
+    "beginning_sentence": "メッセージが届きました。",
+    "speakable_userid": ""
+}
