@@ -15,14 +15,14 @@ var ip = function(ip, lang = 'en') {
   deviceAddress = ip;
   language = lang;
   return this;
-}
+};
 
 var googletts = require('google-tts-api');
 var googlettsaccent = 'us';
 var accent = function(accent) {
   googlettsaccent = accent;
   return this;
-}
+};
 
 var notify = function(message, callback) {
   if (!deviceAddress){
