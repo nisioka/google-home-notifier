@@ -46,7 +46,7 @@ http.createServer(function (request, response) {
         response.end();
     });
 }).listen(config.server_port, function () {
-    ngrok.connect(config.server_port, config.ngrok_auth_token, function (err, url) {
+    ngrok.connect({authtoken: config.ngrok_auth_token, addr: config.server_port}, function (err, url) {
         console.log('Endpoints:');
         console.log('    ' + url);
     });
